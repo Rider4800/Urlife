@@ -132,7 +132,6 @@ codeunit 50015 "Employee & Timesheet Creation"  //TEAM-Priyanshu
                                     if EmployeeRec.Get(EmployeeIDVar) then begin
                                         EmployeeRec."Search Name" := EmployeeNameVar;
                                         EmployeeRec.Modify();
-                                        Message('hi');
                                     end else begin
                                         Employee.Init();
                                         Employee."No." := EmployeeIDVar;
